@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Whole body behaviour */
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+/* Navigation bar */
+.nav {
+  background-color: #5e44a5;
+  overflow: auto;
+  position: relative;
+
+  width: 100%;
+  list-style-type: none;
+  font-family: arial, helvetica, sans-serif;
+}
+
+/* Navigation bar anchors */
+.nav a {
+  float: right;
+  padding: 20px;
+  padding-right: 50px;
+  padding-left: 40px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/*Anchor hover behaviour of nav bar*/
+.nav a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* converter div */
+#converter {
+  margin-top: 63px;
+  padding-top: 80px;
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+}
+
+/* input box for converter and part 02 */
+.input1 {
+  width: 35%;
+  margin-left: 25%;
+  height: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 5px #ddd;
+  padding-left: 30px;
+}
+
+/* selector's attributes */
+#convertSelect {
+  margin-left: 15px;
+  width: 100px;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 5px #ddd;
+  padding-left: 15px;
+  background-color: white;
+}
+
+/* placeholder's attribute, applies to all placeholders*/
+::placeholder {
+  font-size: 15px;
+  font-style: italic;
+  font-family: "consolas", sans-serif;
+}
+
+#convertResult {
+  margin-left: 43%;
+  margin-top: 50px;
+  padding-left: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#submit {
+  width: 100px;
+  height: 40px;
+  background-color: #555;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-left: 42%;
+  margin-top: 2%;
+  font-family: "Helvetica", sans-serif;
+  font-size: 15px;
+}
+
+/* submit button behaviour on hover */
+#convertButton :hover {
+  background-color: whitesmoke;
+  color: #333;
+  border-color: thistle;
+}
+
+/* submit button behaviour while active */
+#convertButton :active {
+  background-color: #555;
+  color: whitesmoke;
+}
+
+#convertResult {
+  margin-left: 41%;
+  margin-top: 50px;
+  padding-left: 0px;
+}
+
+#resultTitle {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: large;
+  text-align: right;
+  float: left;
+  width: 40%;
+  height: 300px;
+  font-weight: 550;
+}
+
+#resultTitle ul {
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+#resultTitle li {
+  padding-top: 20px;
+}
+
+#resultDiv {
+  margin-top: 50px;
+  padding-top: 9px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  letter-spacing: 1.5px;
+  font-size: large;
+  text-align: left;
+  float: left;
+  width: 60%;
+  height: 240px;
+  font-weight: 550;
+}
+
+.result {
+  padding-top: 20px;
+  padding-left: 30px;
+  display: block;
+}
+
+#part3 {
+  margin-top: 400px;
+  margin-left: 25%;
+}
+
+#magicInput {
+  box-shadow: inset 0 1px 5px #ddd;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  width: 50%;
+  height: 400px;
+  font-size: 18px;
+  font-family: "consolas", sans-serif;
+}
+
+#magicButtons {
+  margin-left: 25%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+.magicBtn {
+  font-family: "consolas", sans-serif;
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 40px;
+  text-align: center;
+  min-width: 60px;
+}
+
+#quoteGenerator {
+  margin-top: 5%;
+  width: 35%;
+  float: left;
+  margin-left: 25%;
+}
+
+#quoteGenerator p {
+  padding-top: 40px;
+  overflow: auto;
+  text-align: center;
+  height: 70px;
+  vertical-align: baseline;
+  padding-right: 20px;
+  border: 7px solid;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: bold;
+}
+
+#quoteBtnDiv {
+  padding-left: 0px;
+  margin-top: 6%;
+  margin-left: 0px;
+  width: 40%;
+  float: right;
+  height: 160px;
+}
+
+#insideBtnDiv {
+  padding-left: 50px;
+}
+
+#quoteBtnDiv button {
+  height: 60px;
+  width: 60px;
+  display: inline;
+  border-radius: 10%;
+}
+
+#quoteBtn1 {
+  background-color: blanchedalmond;
+}
+
+#quoteBtn2 {
+  background-color: crimson;
+}
+
+#quoteBtn3 {
+  background-color: blueviolet;
+}
+
+#quoteBtn4 {
+  background-color: cornflowerblue;
+}
+
+.footer {
+  display: flow-root;
+  margin-top: 100px;
+  background-color: #333;
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.footer a {
+  float: right;
+  color: #8d8d8d;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 20px 16px;
+}
+
+.footer .backtoTop {
+  float: left;
+  font-size: 15px;
+  padding: 20px 16px;
+}
+
+.footer a:hover {
+  color: silver;
+}
+
+.footer a:active {
+  color: white;
+}

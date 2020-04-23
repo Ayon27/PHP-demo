@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 02</title>
+    <link rel="stylesheet" href="a02Style.css">
+    <script type="text/javascript" src="Assignment02.js"></script>
+</head>
+
+<body onload="randomQuote()">
+    <!--  Navigation bar  -->
+    <div class="nav">
+        <a href="a02.html"><b>Assignment 2</b></a>
+        <a href="../index.html"><b>Home</b></a>
+    </div>
+    <!--  Navigation bar end  -->
+
+    <!-- Converter menu start-->
+    <div id="converter">
+        <input type="number" class="input1" id="convertInput" placeholder="Convert" oninput="convert()">
+
+        <select id="convertSelect" onchange="changeSelection()">
+            <option value="0">lb to kg</option>
+            <option value="1">kg to lb</option>
+        </select>
+
+        <div id="convertResult">
+            <label id="result"></label>
+        </div>
+    </div>
+    <!-- Converter menu end-->
+
+    <!--  part 2, finds min, max, sum, avg, reverse oder from input  -->
+    <div id="part2">
+        <input type="text" id="inputTask2" placeholder="Enter a series of numbers" class="input1" oninput="task02()">
+    </div>
+
+    <div id="resultTitle">
+        <ul>
+            <li class="outputs"> Max: </li>
+            <li class="outputs"> Min: </li>
+            <li class="outputs"> Sum: </li>
+            <li class="outputs"> Average: </li>
+            <li class="outputs"> Reverse Order: </li>
+        </ul>
+    </div>
+
+    <div id="resultDiv">
+        <label class="result" id="max"></label>
+        <label class="result" id="min"> </label>
+        <label class="result" id="sum"> </label>
+        <label class="result" id="avg"> </label>
+        <label class="result" id="reverseOrder"> </label>
+    </div>
+    <!--  part 2, finds min, max, sum, avg, reverse oder from input END -->
+
+
+    <!-- part 3, magic   -->
+    <div id="part3">
+        <textarea placeholder="Enter anything :)" id="magicInput"></textarea>
+    </div>
+
+    <div id=magicButtons>
+        <button id="clearBtn" class="magicBtn" onclick="clearAll()">Clear</button>
+        <button class="magicBtn" onclick="capitalize()">Capitalize</button>
+        <button class="magicBtn" onclick="letsSort()">Sort</button>
+        <button class="magicBtn" onclick="letsReverse()">Reverse</button>
+        <button class="magicBtn" onclick="stripBlank()">Strip Blank</button>
+        <button class="magicBtn" onclick="addNum()">Add Numbers</button>
+        <button class="magicBtn" onclick="letsShuffle()">Shuffle</button>
+    </div>
+
+    <div id="closeGap"></div>
+
+    <div id="quoteGenerator">
+        <p id="quoteLabel"></p>
+    </div>
+
+    <div id="quoteBtnDiv">
+        <div id="insideBtnDiv">
+            <button class="qbtn" id="quoteBtn1" onclick="randomQuote()"></button>
+            <button class="qbtn" id="quoteBtn2" onclick="randomQuote()"></button>
+            <br>
+            <button class="qbtn" id="quoteBtn3" onclick="randomQuote()"></button>
+            <button class="qbtn" id="quoteBtn4" onclick="randomQuote()"></button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <a href="#top" class="backtoTop">Back to Top</a>
+        <a href="https://www.bracu.ac.bd" target="_blank">BRACU</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+    </div>
+
+</body>
+
+</html>
